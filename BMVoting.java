@@ -1,6 +1,6 @@
  public int majority(int val[])
     {
-      if(val.length==0)
+      if(val.length==0)                           // If array is empty
       {
           System.out.println("Array is empty");
           return -1;
@@ -8,7 +8,7 @@
       int candidate=0;
       int count=0;
       int freq_count=0;
-      for(int i=0;i<val.length;i++)
+      for(int i=0;i<val.length;i++)                // Finding the candidate
       {
         if(count==0)
             candidate=val[i];
@@ -17,18 +17,18 @@
         else
             count--;
       }
-       System.out.println("Candidate is "+candidate);
+       System.out.println("Candidate is "+candidate); // For debugging and understanding
        
        System.out.println("Count is "+count);
 
-      for(int j=0;j<val.length;j++)
+      for(int j=0;j<val.length;j++)                     // Getting the count of candidate value
       {
         if(val[j]==candidate)
             freq_count++;
       }
       System.out.println("candidate appears "+freq_count+" times");
       
-      if(freq_count==(val.length/2)+1)
+      if(freq_count==(val.length/2)+1)                  // Checking if candidate appears more than 50%
           return candidate;
       
       else return -1;
@@ -52,5 +52,5 @@
  First pass:count values would be [1,0,1,2,1,0,1,0,1] and final candidate is 2 with count 1
  Second pass: The frequency of "2" is 5 so it is a majority element. 
 
-
+ The paper for algorith is http://www.cs.rug.nl/~wim/pub/whh348.pdf
 */
