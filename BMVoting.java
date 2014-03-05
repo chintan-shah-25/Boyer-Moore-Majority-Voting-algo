@@ -52,5 +52,5 @@
  First pass:count values would be [1,0,1,2,1,0,1,0,1] and final candidate is 2 with count 1
  Second pass: The frequency of "2" is 5 so it is a majority element. 
 
- The paper for algorith is http://www.cs.rug.nl/~wim/pub/whh348.pdf
+ The paper for algorithm is http://www.cs.rug.nl/~wim/pub/whh348.pdf
 */
